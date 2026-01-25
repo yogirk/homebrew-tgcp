@@ -5,21 +5,21 @@
 class Tgcp < Formula
   desc "Terminal UI for Google Cloud Platform"
   homepage "https://github.com/yogirk/tgcp"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.1.0/tgcp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ac10ad26f4f12dd01d45085765e7b971cbaaeaff03b7ed66679837ef40f03150"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_darwin_amd64.tar.gz"
+      sha256 "2b1435630c655fc981b13c542f21b0e28fe6fea4bb9d8eeb7a7d831df29f1676"
 
       def install
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.1.0/tgcp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9d33a0fcc6323b0980de55eb7e3d69e49dd8d2c520c74ef9406c1b5536538d84"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_darwin_arm64.tar.gz"
+      sha256 "b49cd50fcb99f15190c64eb81913d1df2b2d1e1091edc849b507b4cbaa7817fa"
 
       def install
         bin.install "tgcp"
@@ -29,15 +29,15 @@ class Tgcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.1.0/tgcp_0.1.0_linux_amd64.tar.gz"
-      sha256 "ac5ff4f3623926d7ff982218cf7be86b6aa28173a869f8d880e76fed3a593f1d"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_linux_amd64.tar.gz"
+      sha256 "c3d4faf5a70b350ac981ce41e625f30855e0a7936ec2b673d170aa002bcd9cfc"
       def install
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.1.0/tgcp_0.1.0_linux_arm64.tar.gz"
-      sha256 "1ab5564f176e37506f83009c9d3f07c394edd5564d69a90c80621f7f8957122a"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_linux_arm64.tar.gz"
+      sha256 "ca93a3eb842b69f8455a64c34c5ed8b244cd82117ff0d91fe49e71521dd38d09"
       def install
         bin.install "tgcp"
       end
