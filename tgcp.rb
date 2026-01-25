@@ -11,7 +11,7 @@ class Tgcp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_darwin_amd64.tar.gz"
-      sha256 "2b1435630c655fc981b13c542f21b0e28fe6fea4bb9d8eeb7a7d831df29f1676"
+      sha256 "8c86fa08b2081a4b67c73612436610b14e50b5e153ebeea5746571d1494fb0e5"
 
       def install
         bin.install "tgcp"
@@ -19,7 +19,7 @@ class Tgcp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_darwin_arm64.tar.gz"
-      sha256 "b49cd50fcb99f15190c64eb81913d1df2b2d1e1091edc849b507b4cbaa7817fa"
+      sha256 "bb4ff044b73f6518336daba38e045c1b6a6c33b595c0eb6bb4124ce3c4204da3"
 
       def install
         bin.install "tgcp"
@@ -30,14 +30,14 @@ class Tgcp < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_linux_amd64.tar.gz"
-      sha256 "c3d4faf5a70b350ac981ce41e625f30855e0a7936ec2b673d170aa002bcd9cfc"
+      sha256 "3e3463d3446821145cef1cbc6a850f69cc01bd193d26ac485d91dee720741bab"
       def install
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yogirk/tgcp/releases/download/v0.2.0/tgcp_0.2.0_linux_arm64.tar.gz"
-      sha256 "ca93a3eb842b69f8455a64c34c5ed8b244cd82117ff0d91fe49e71521dd38d09"
+      sha256 "f3ded7390375524bc3b0ecdc4ca1ec07c105702cc9f26ff069bf122c82f0bca1"
       def install
         bin.install "tgcp"
       end
