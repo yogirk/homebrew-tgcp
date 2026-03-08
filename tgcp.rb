@@ -5,23 +5,23 @@
 class Tgcp < Formula
   desc "Terminal UI for Google Cloud Platform"
   homepage "https://github.com/yogirk/tgcp"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.3.0/tgcp_0.3.0_darwin_amd64.tar.gz"
-      sha256 "3a5e375b60916c4842f31464d37290cad709ddf3a8846ce883883ee072073541"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.4.0/tgcp_0.4.0_darwin_amd64.tar.gz"
+      sha256 "67377a1815905e1e2b58fc71e5f9e6dc7d45fa357f9aac0350012a0dfbcd9d17"
 
-      def install
+      define_method(:install) do
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.3.0/tgcp_0.3.0_darwin_arm64.tar.gz"
-      sha256 "8c86349b655f043d87a04865a73cfedc419d6b3cd13b401dca9e118505efffde"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.4.0/tgcp_0.4.0_darwin_arm64.tar.gz"
+      sha256 "11946f5a08adb6be88f4ed6d1204e4ba675173d701294e7e6ed31fc1c2684046"
 
-      def install
+      define_method(:install) do
         bin.install "tgcp"
       end
     end
@@ -29,16 +29,16 @@ class Tgcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.3.0/tgcp_0.3.0_linux_amd64.tar.gz"
-      sha256 "f81cffbbb2c78b276560b6b7dbc5d50f451c067717c9dcca359e38755ea39c05"
-      def install
+      url "https://github.com/yogirk/tgcp/releases/download/v0.4.0/tgcp_0.4.0_linux_amd64.tar.gz"
+      sha256 "70ef3442ce1043f7a50c20b09a4c8723566c7a2d2962746c344633ac332ba108"
+      define_method(:install) do
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.3.0/tgcp_0.3.0_linux_arm64.tar.gz"
-      sha256 "fb8eda4cf41fc0e8f370aa37befbe1c9fc3fe26e8bbabed74a279713ab7350ed"
-      def install
+      url "https://github.com/yogirk/tgcp/releases/download/v0.4.0/tgcp_0.4.0_linux_arm64.tar.gz"
+      sha256 "c8317086ce36e4e3f25d89d3959a976fa25546ff0e7f179e834e6de7fdbda553"
+      define_method(:install) do
         bin.install "tgcp"
       end
     end
