@@ -11,7 +11,7 @@ class Sparks < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c2f89961a714802563ae481c331743a8c26a2f65fa406d1f79c2375d9c8bfc8d"
+      sha256 "af2929a6103c02af77daf0f49b67a50ed94402065ff994656258619387c6c13d"
 
       define_method(:install) do
         bin.install "sparks"
@@ -19,7 +19,7 @@ class Sparks < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_darwin_arm64.tar.gz"
-      sha256 "fe5f04588b75c47a37db045a5650aa0f9452ff6978ac41099080a4873efcb2bc"
+      sha256 "142d3a56910380fc7765ea58e31ad0ab34822f398ea0e9893d098c61268df11a"
 
       define_method(:install) do
         bin.install "sparks"
@@ -30,14 +30,14 @@ class Sparks < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_linux_amd64.tar.gz"
-      sha256 "a195d3728e98fc05ec0025c48cd4d4cc831f4d0d95503e11fa18fef4d5b3920e"
+      sha256 "67fbac75cbea01929eb6b3a9f94b9aeeae9bc2338336ffd27f1807d844831628"
       define_method(:install) do
         bin.install "sparks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_linux_arm64.tar.gz"
-      sha256 "7d9828363204e5b07de52c5a7c4726ccabecb45ece32d18ffc660d7af6227ccc"
+      sha256 "98a9e7008ddc0c6a4a2883f8cdc3135c6809ddd214028a38d6fcfed5d0c4d7b1"
       define_method(:install) do
         bin.install "sparks"
       end
