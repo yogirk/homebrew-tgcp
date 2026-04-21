@@ -5,21 +5,21 @@
 class Sparks < Formula
   desc "Knowledge base runtime for AI agents — a single Go binary that any harness can drive"
   homepage "https://github.com/yogirk/sparks"
-  version "0.1.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yogirk/sparks/releases/download/v0.1.0/sparks_0.1.0_darwin_amd64.tar.gz"
-      sha256 "aeed5b46810a5f8b6f082f3ebfdd445c153c365ad9773c4705a6cb0840d0c6f6"
+      url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_darwin_amd64.tar.gz"
+      sha256 "43fd5b5bd3b9cee551b76b86ef38c0409fc6d6d3dee2745bcb41c50ccf5a8907"
 
       define_method(:install) do
         bin.install "sparks"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yogirk/sparks/releases/download/v0.1.0/sparks_0.1.0_darwin_arm64.tar.gz"
-      sha256 "86295efd6c8ad18428e9f924b19f1aed3d549629593604876c05d57b0f8def76"
+      url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_darwin_arm64.tar.gz"
+      sha256 "c7d0bc13bba9d8a7c9255f27cbc6c7a8fa579b075b991f0f67e025e34aa8df9d"
 
       define_method(:install) do
         bin.install "sparks"
@@ -29,15 +29,15 @@ class Sparks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/sparks/releases/download/v0.1.0/sparks_0.1.0_linux_amd64.tar.gz"
-      sha256 "21a387e4612acec09c4b57db1db10449816221f8faae38be0a3983e7820a0d06"
+      url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_linux_amd64.tar.gz"
+      sha256 "9b826b1dafbc4ff1e1dd5766ccaa166f1d5ce08c14bdeeee822689fd6b24998f"
       define_method(:install) do
         bin.install "sparks"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/sparks/releases/download/v0.1.0/sparks_0.1.0_linux_arm64.tar.gz"
-      sha256 "bdd14202e3239220064cc05e3de0706af82fa1e7dac22f432f66f06dea924419"
+      url "https://github.com/yogirk/sparks/releases/download/v0.3.0/sparks_0.3.0_linux_arm64.tar.gz"
+      sha256 "53c7eda522d63525a24e228a13f7642f760297a57216d43c6935ce7ac5b4d273"
       define_method(:install) do
         bin.install "sparks"
       end
