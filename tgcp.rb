@@ -5,21 +5,21 @@
 class Tgcp < Formula
   desc "Terminal UI for Google Cloud Platform"
   homepage "https://github.com/yogirk/tgcp"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.5.0/tgcp_0.5.0_darwin_amd64.tar.gz"
-      sha256 "3c3ac5687014d007ffe7feca4077fe41004d2cc68fd11de7524be1c5d7bde4ad"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.5.1/tgcp_0.5.1_darwin_amd64.tar.gz"
+      sha256 "8674ae3a6c9fe7b94e200187af0f6fc54f39397032337baeaabbdd8dfc0d7987"
 
       define_method(:install) do
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.5.0/tgcp_0.5.0_darwin_arm64.tar.gz"
-      sha256 "ee72aca53da35346ddcdc138560164410e0b2e7362d3a09b5b99f781db18a3ea"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.5.1/tgcp_0.5.1_darwin_arm64.tar.gz"
+      sha256 "5e3b11be63d953119fcf361964fecc56b42a7a7d1f0a62b317c5fd4cc4bfc48e"
 
       define_method(:install) do
         bin.install "tgcp"
@@ -29,15 +29,15 @@ class Tgcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.5.0/tgcp_0.5.0_linux_amd64.tar.gz"
-      sha256 "fb24b9c1e9b19dfd535b7a43f84eb77cd452c2c078f9e5e01ec20c1fbc1db316"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.5.1/tgcp_0.5.1_linux_amd64.tar.gz"
+      sha256 "e638b56d9b21e8670ac0dbc867ff27a1aa96f00682c35e20a89bc3722beda1db"
       define_method(:install) do
         bin.install "tgcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yogirk/tgcp/releases/download/v0.5.0/tgcp_0.5.0_linux_arm64.tar.gz"
-      sha256 "1b614663da97d306e0ca47fbee3bf61a9a6dba5b60d887395f08004d22ace253"
+      url "https://github.com/yogirk/tgcp/releases/download/v0.5.1/tgcp_0.5.1_linux_arm64.tar.gz"
+      sha256 "ab29cfdfb2ef62327dcbf4b5251b550819e1b97e567191afd73fce0d8ea7a386"
       define_method(:install) do
         bin.install "tgcp"
       end
